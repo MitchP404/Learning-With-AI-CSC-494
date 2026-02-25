@@ -1,0 +1,14 @@
+# Week 6
+- Used Google's AI Overview to figure out why my backend docker container wasn't pulling the dependencies listed in my package.json.
+  - Prompt: docker node pull dependencies using package json
+  - Answer: "To install Node.js dependencies in a Docker container based on the package.json file, you need to create a Dockerfile with specific instructions to copy the file and run the npm install command." It then listed an example Dockerfile and several sources for me to use.
+- Used Google's AI Overview to figure out how to make a Docker volume use a relative path
+  - Prompt: docker compose relative path 
+  - Example Given: ./mysql_data/_data:/var/lib/mysql
+  - Learned: You need a '.' before the path
+- Used Google's AI Overview to learn how to make Javascript send a Get request in order to test communication between two Docker containers
+  - Prompt: javascript send get request
+  - Answer: "The fetch() method is available globally in modern browsers and Node.js (version 18+). It takes the URL as its primary argument and uses GET by default if no other method is specified in an optional options object." An example was then provided
+- Used Google's AI Overview to learn how CORS works and learn other places to research it
+  - Prompt: cors
+  - Answer: Long, but the especially helpful part was 'A " Cross-Origin Request Blocked" error occurs if the server does not explicitly allow the requesting domain, often seen in web development when frontend (e.g., localhost:3000) calls a backend (e.g., api.example.com)'. This was the issue I was having.
