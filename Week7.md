@@ -40,3 +40,15 @@
 - Used Google's AI overview to figure out how to see if a previous promise was rejected in JS
   - Prompt: js promises check if previous promise was rejected
   - Answer: If you only provide a fulfillment handler to a .then() call, any rejection will skip that handler and fall through to the next available rejection handler in the chain, which is typically a .catch() block
+- Used Google's AI overview to find out how to get the hostname of the source of the webpage
+  - Prompt: js get hostname of source
+  - Answer: In JavaScript, you can get the hostname using the hostname property of the window.location object (for the current page's URL) or the URL object (for any given URL string).
+- Used Google's AI overview to find out what the stdin_open parameter in a docker_compose file meant
+  - Prompt: docker stdin_open
+  - Answer: stdin_open is a Docker Compose parameter that keeps the container's standard input (stdin) open, even if it is not currently attached. This is equivalent to the -i (interactive) flag in the docker run command and is essential for interactive processes like a shell prompt to function correctly.
+- Used Google's AI overview to find out what the tty parameter in a docker_compose file meant
+  - Prompt: docker tty
+  - Answer: In Docker, TTY (TeleType or pseudo-terminal) refers to allocating a virtual terminal for a container, allowing for interactive use. This is typically enabled using the -t flag in the docker run or docker exec commands, often in conjunction with the -i (interactive) flag.
+- Used Google's AI overview to find out how to make run a setup script for an SQL database
+  - Prompt: mysql docker container automatically set up table
+  - Answer: "To automatically set up tables in a MySQL Docker container, place your SQL initialization scripts in the container's /docker-entrypoint-initdb.d/ directory. The official MySQL Docker image automatically runs any scripts in this directory when the container starts for the first time." A helpful code example was also given.
