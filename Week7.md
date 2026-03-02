@@ -1,0 +1,42 @@
+# Week 7
+- Used Google's AI Overview to find a way to run a Javascript function immediately once the page loads
+  - Prompt: javascript run function on page load
+  - Answer: "You can run a JavaScript function on page load using events like DOMContentLoaded (recommended for most cases) or window.load"
+- Used Google's AI Overview to find a way to run send a JSON oject through a websocket.
+  - Prompt: websockets send json object
+  - Answer: "To send a JSON object over a WebSocket connection, you must first serialize the object into a JSON string using the built-in JSON.stringify() method. The WebSocket protocol primarily transmits data as text (UTF-8 strings) or binary data (Blobs or ArrayBuffers), not native JavaScript objects directly."
+- Used Google's AI Overview to figure out what JavaScript event triggers when a radio button option changes.
+  - Prompt: javascript radio button on change
+  - Answer: "To detect when a different radio button in a group is selected, you can use the change event in JavaScript. The change event fires reliably across modern browsers when a radio button's checked state is modified."
+- Used Google's AI Overview to figure out how to add a directory to a .gitignore file
+  - Prompt: gitignore folder
+  - Answer: "To ignore a folder in Git, create or edit the.gitignore file in your repository's root directory and add the name of the folder followed by a slash (/) on a new line."
+- Used Google's AI Overview to figure out how to add a constructor to a JavaScript class
+  - Prompt: js constructor
+  - Answer: An example was included using "constructor(parameter){...}"
+- Used Google's AI Overview to make find out how to prevent SQL injection attacks
+  - Prompt: mysql node js how to make sure data is not code
+  - Answer: "To ensure that data is treated as data and not executable code in a Node.js MySQL application, you must use parameterized queries (prepared statements) instead of string concatenation, and implement strict input validation. These practices prevent SQL injection attacks."
+- Used Google's AI overview to figure out the difference between DATETIME and TIMESTAMP in MySQL
+  - Prompt: sql datetime vs timestamp
+  - Answer: The core difference between DATETIME and TIMESTAMP in SQL (specifically MySQL, where both store date and time information) is how they handle time zones and their supported date range.
+  - Learn: DATETIME has a better range, but doesn't convert time zones. In my case, I want DATETIME
+- Used Google's AI overview to figure out how to do an UPDATE in SQL where the ID is at its lowest point.
+  - Prompt: sql update where id is lowest
+  - Answer: The basic syntax for updating the row with the minimum id is:
+  UPDATE TableName
+  SET ColumnName = 'NewValue'
+  WHERE id = (SELECT MIN(id) FROM TableName);
+  - Note: This was wrong. The AI tried to explain how it was wrong later but did so incorrectly so I went to another source.
+- Used Google's AI overview to explain how to make a docker container depend on another using docker compose
+  - Prompt: docker compose depend
+  - Answer: "In Docker Compose, the depends_on keyword is used to express dependencies between services, controlling their startup and shutdown order."..."To ensure a dependent service is fully operational before a service starts, you can use the long syntax with a condition".
+- After a whole rabbit hole, used Google's AI overview to find out that service names in Docker are used as hostnames
+  - Prompt: docker connection strings
+  - Answer: "In Docker environments, connection strings are typically managed using environment variables and by referencing containers using their service names (as hostnames) instead of localhost."
+- Used Google's AI overview to figure out how to make a fake enum in JS
+  - Prompt: js enum
+  - Answer: "JavaScript does not have a built-in enum keyword like other languages (such as TypeScript or Java). Instead, developers create enum-like structures using objects to define a fixed set of named constants, which improves code readability and maintainability.
+- Used Google's AI overview to figure out how to see if a previous promise was rejected in JS
+  - Prompt: js promises check if previous promise was rejected
+  - Answer: If you only provide a fulfillment handler to a .then() call, any rejection will skip that handler and fall through to the next available rejection handler in the chain, which is typically a .catch() block
